@@ -1,3 +1,4 @@
+import { BottomNav } from './components/BottomNav';
 import Navbar from './components/Navbar';
 import AppRoutes from './routes';
 
@@ -6,6 +7,7 @@ function App() {
     <>
       <Navbar />
       <AppRoutes />
+      <BottomNav/>
     </>
   );
 }
