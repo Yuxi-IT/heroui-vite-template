@@ -1,5 +1,5 @@
 import { ArrowLeft, Circles5Random, Comment, Xmark, Plus } from "@gravity-ui/icons";
-import { Avatar, AvatarImage, Button, Card, Input, Tab, Tabs, TextArea } from "@heroui/react";
+import { Button, Input, Tabs, TextArea } from "@heroui/react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { useImagePreview } from "../components/ImagePreview";
