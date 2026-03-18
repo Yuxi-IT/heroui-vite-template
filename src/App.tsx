@@ -1,5 +1,4 @@
 import { BottomNav } from './components/BottomNav';
-import Navbar from './components/Navbar';
 import { siteConfig } from './config/site';
 import AppRoutes from './routes';
 

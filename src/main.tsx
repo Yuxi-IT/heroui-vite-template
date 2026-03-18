@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import { I18nProvider } from './i18n'
 import { ThemeProvider } from './theme'
+import { ImagePreviewProvider } from './components/ImagePreview'
 import App from './App.tsx'
 import './styles/globals.css'
 
@@ -11,7 +12,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <ThemeProvider>
       <I18nProvider>
         <BrowserRouter>
-          <App />
+          <ImagePreviewProvider>
+            <App />
+          </ImagePreviewProvider>
         </BrowserRouter>
       </I18nProvider>
     </ThemeProvider>

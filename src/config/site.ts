@@ -2,7 +2,7 @@ import { BroadcastSignal, Comments, House, Person, Plus } from "@gravity-ui/icon
 import { ComponentType, SVGProps } from "react";
 
 export const siteConfig = {
-    name: "HeroUI3",
+    name: "heroui-vite-template",
     description: "A modern UI library for React",
     
 }
