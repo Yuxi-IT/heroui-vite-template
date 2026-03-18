@@ -5,10 +5,9 @@ import { navItems } from '../config/site';
 import { useI18n } from '../i18n';
 import { useTheme } from '../theme';
 import { Globe } from '@gravity-ui/icons';
-import { BottomNav } from './BottomNav';
 
 function Navbar() {
-  const { locale, setLocale, t } = useI18n();
+  const { setLocale, t } = useI18n();
   const { theme, setTheme } = useTheme();
 
   const handleThemeChange = (newTheme: 'light' | 'dark') => {

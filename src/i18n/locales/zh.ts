@@ -1,8 +1,10 @@
 export default {
   nav: {
     home: '首页',
-    about: '关于',
-    contact: '联系'
+    square: '广场',
+    message: '消息',
+    user: '用户',
+    notFound: '404'
   },
   common: {
     welcome: '欢迎',
@@ -11,5 +13,9 @@ export default {
   theme: {
     light: '明亮模式',
     dark: '暗黑模式'
+  },
+  notFound: {
+    description: '页面未找到',
+    button: '返回首页'
   }
 };

@@ -1,8 +1,10 @@
 export default {
   nav: {
     home: 'Home',
-    about: 'About',
-    contact: 'Contact'
+    square: 'Square',
+    message: 'Message',
+    user: 'User',
+    notFound: '404'
   },
   common: {
     welcome: 'Welcome',
@@ -11,5 +13,9 @@ export default {
   theme: {
     light: 'Light',
     dark: 'Dark'
+  },
+  notFound: {
+    description: 'Page not found',
+    button: 'Go to Home'
   }
 };

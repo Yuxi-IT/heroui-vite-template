@@ -1,4 +1,4 @@
-import { House, Magnifier, Person } from "@gravity-ui/icons";
+import { BroadcastSignal, Comments, House, Person, Plus } from "@gravity-ui/icons";
 import { ComponentType, SVGProps } from "react";
 
 export const siteConfig = {
@@ -9,10 +9,13 @@ export const siteConfig = {
 
 export const navItems: {
     icon: ComponentType<SVGProps<SVGSVGElement>>;
-    label: string;
-    url: string
+    label?: string;
+    url: string;
+    showBottomNav?: boolean;
 }[] = [
     {icon: House, label: "Home", url: "/"},
-    {icon: Magnifier, label: "About", url: "/about"},
-    {icon: Person, label: "Contact", url: "/contact"},
+    {icon: BroadcastSignal, label: "Square", url: "/square"},
+    {icon: Plus, url: "/publish", showBottomNav: false},
+    {icon: Comments, label: "Message", url: "/message"},
+    {icon: Person, label: "User", url: "/user"},
 ];

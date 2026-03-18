@@ -57,7 +57,7 @@ import { Home, User, Mail } from '@gravity-ui/icons';
 
 export const navItems = [
   { label: 'Home', url: '/', icon: Home },
-  { label: 'About', url: '/about', icon: User },
+  { label: 'Square', url: '/square', icon: User },
   { label: 'Contact', url: '/contact', icon: Mail }
 ];
 ```

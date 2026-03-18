@@ -1,6 +1,6 @@
 import { Card, Tabs } from '@heroui/react';
 
-function Contact() {
+function User() {
   return (
     <div className="container mx-auto py-8">
       <Card className="p-6">
@@ -49,4 +49,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default User;

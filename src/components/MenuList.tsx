@@ -6,9 +6,8 @@ import React from "react";
 import { useI18n } from "../i18n";
 
 export function MenuList() {
-  const [isOpen, setIsOpen] = React.useState(false);
+    const [isOpen, setIsOpen] = React.useState(false);
     const { t } = useI18n();
-
 
     return (
     <div className="sm:hidden">
