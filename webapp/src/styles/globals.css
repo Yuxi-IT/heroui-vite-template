@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+*{
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+body{
+  overflow: hidden;
+  overscroll-behavior: none;
+  touch-action: none;
+  zoom: 1;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+#root {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+p{
+  -webkit-user-select: auto;
+  -khtml-user-select: auto;
+  -moz-user-select: auto;
+  -o-user-select: auto;
+  user-select: auto;
+}
