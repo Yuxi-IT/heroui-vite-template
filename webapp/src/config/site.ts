@@ -16,6 +16,10 @@ export const navItems: {
     {icon: House, label: "Home", url: "/"},
     {icon: BroadcastSignal, label: "Square", url: "/square"},
     {icon: Plus, url: "/publish", showBottomNav: false},
+<<<<<<< Updated upstream:webapp/src/config/site.ts
     {icon: Comments, label: "Messages", url: "/messages"},
+=======
+    {icon: Comments, label: "Message", url: "/messages"},
+>>>>>>> Stashed changes:src/config/site.ts
     {icon: Person, label: "User", url: "/user"},
 ];

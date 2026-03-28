@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream:webapp/src/service/native.ts
 /**
  * Unified native bridge — works with both Android JavascriptInterface and iOS WKScriptMessageHandler.
  *
@@ -103,3 +104,27 @@ export const AppBridgeNative = {
     return parseInt(result, 10) || 0;
   },
 };
+=======
+export const AppBridgeNative = (window as any).appBridge;
+/*
+AppBridgeNative.showToast(msg, duration)
+                
+AppBridgeNative.copyToClipboard(text);
+
+window.app.clipboardCallback = callback;
+AppBridgeNative.getFromClipboard();
+
+AppBridgeNative.sendNotification(title, msg, id || 0);
+                
+AppBridgeNative.shareText(text);
+                
+AppBridgeNative.shareUri(uri);
+                
+AppBridgeNative.shareImage(imagePath);
+
+AppBridgeNative.requestNotification()
+
+AppBridgeNative.saveImage(base64);
+                
+*/
+>>>>>>> Stashed changes:src/service/native.ts

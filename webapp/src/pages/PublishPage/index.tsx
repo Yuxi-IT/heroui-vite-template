@@ -2,14 +2,22 @@ import { ArrowLeft, Circles5Random, Comment, Xmark, Plus } from "@gravity-ui/ico
 import { Button, Input, Tabs, TextArea } from "@heroui/react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+<<<<<<< Updated upstream:webapp/src/pages/PublishPage/index.tsx
 import DefaultLayout from "../../layout/DefaultLayout";
 import { useImagePreview } from "../../components/ImagePreview";
+=======
+import DefaultLayout from "../layout/DefaultLayout";
+>>>>>>> Stashed changes:src/pages/Publish.tsx
 
 function Publish() {
     const navigate = useNavigate();
     const [images, setImages] = useState<string[]>([]);
+<<<<<<< Updated upstream:webapp/src/pages/PublishPage/index.tsx
     const { showImage } = useImagePreview();
     
+=======
+
+>>>>>>> Stashed changes:src/pages/Publish.tsx
     const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
         console.log(1);
         const files = e.target.files;
@@ -61,17 +69,25 @@ function Publish() {
                                 <label className="w-[80px] h-[80px] flex-shrink-0 rounded-[15px] bg-gray-200 dark:bg-gray-700 flex items-center justify-center cursor-pointer">
                                     <Plus className="w-8 h-8 text-gray-500"/>
                                     <input type="file" title="img" accept="image/*" 
+<<<<<<< Updated upstream:webapp/src/pages/PublishPage/index.tsx
                                     multiple 
                                     max={9} 
                                     maxLength={9}
+=======
+                                    multiple max={9} 
+>>>>>>> Stashed changes:src/pages/Publish.tsx
                                     className="hidden" 
                                     onChange={handleImageUpload}/>
                                 </label>
                             )}
                             {images.map((img, index) => (
                                 <div key={index} className="relative w-[80px] h-[80px] flex-shrink-0">
+<<<<<<< Updated upstream:webapp/src/pages/PublishPage/index.tsx
                                     <img src={img} alt="" className="w-full h-full rounded-[15px] object-cover cursor-pointer" 
                                     onClick={() => showImage(img, 'image')}/>
+=======
+                                    <img src={img} alt="" className="w-full h-full rounded-[15px] object-cover cursor-pointer" />
+>>>>>>> Stashed changes:src/pages/Publish.tsx
                                     <Button isIconOnly size="sm" className="absolute -top-1 -right-1 w-5 h-5" onClick={() => removeImage(index)}>
                                         <Xmark className="w-3 h-3"/>
                                     </Button>

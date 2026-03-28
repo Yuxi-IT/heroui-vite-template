@@ -10,7 +10,11 @@ import './styles/globals.css'
 import { navItems } from './config/site.ts'
 import VConsole from 'vconsole';
 
+<<<<<<< Updated upstream:webapp/src/main.tsx
 new VConsole();
+=======
+const vConsole = new VConsole();
+>>>>>>> Stashed changes:src/main.tsx
 
 window.rootList = navItems.filter(item => item.label && item.label !== null).map(item => item.url);
 

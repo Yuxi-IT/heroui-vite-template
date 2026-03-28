@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { setTitle } from '../App';
 import { navItems } from '../config/site';
 
+<<<<<<< Updated upstream:webapp/src/routes/index.tsx
 import Home from '../pages/HomePage';
 import NotFound from '../pages/NotFoundPage';
 import User from '../pages/UserPage';
@@ -10,6 +11,15 @@ import Square from '../pages/SquarePage';
 import Publish from '../pages/PublishPage';
 import Messages from '../pages/MessagesPage';
 import ChatPage from '../pages/ChatPage';
+=======
+import Home from '../pages/Home';
+import NotFound from '../pages/NotFound';
+import User from '../pages/User';
+import Square from '../pages/Square';
+import Publish from '../pages/Publish';
+import Messages from '../pages/Messages';
+import Chat from '../pages/Chat';
+>>>>>>> Stashed changes:src/routes/index.tsx
 
 function AppRoutes() {
   const location = useLocation();
@@ -34,7 +44,11 @@ function AppRoutes() {
         <Route path="/square" element={<PageTransition onSwipe={handleSwipe}><Square /></PageTransition>} />
         <Route path="/user" element={<PageTransition onSwipe={handleSwipe}><User /></PageTransition>} />
         <Route path="/messages" element={<PageTransition onSwipe={handleSwipe}><Messages /></PageTransition>} />
+<<<<<<< Updated upstream:webapp/src/routes/index.tsx
         <Route path="/chat/:userId" element={<ChatPage />} />
+=======
+        <Route path="/chat/:userId" element={<Chat />} />
+>>>>>>> Stashed changes:src/routes/index.tsx
         <Route path="/publish" element={<Publish />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
