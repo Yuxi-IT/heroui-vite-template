@@ -4,27 +4,15 @@ import { Button, Dropdown, Label } from '@heroui/react';
 import { MenuList } from '../components/MenuList';
 import { navItems, siteConfig } from '../config/site';
 import { useI18n } from '../i18n';
-import { Bars, Globe, House, Xmark,  } from '@gravity-ui/icons';
+import { Globe } from '@gravity-ui/icons';
 
 function Sidebar() {
   const { setLocale, t } = useI18n();
   const [isOpen, setIsOpen] = useState(false);
+  const [currentUrl, setCurrentUrl] = useState(window.location.pathname);
 
   return (
     <>
-      {/* 移动端菜单按钮 */}
-      <div className="sm:hidden fixed top-4 left-4 z-50">
-        <Button 
-          isIconOnly 
-          variant="ghost" 
-          onPress={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
-          {isOpen ? <Xmark /> : <Bars />}
-        </Button>
-      </div>
-
-      {/* 侧边栏主体 */}
       <aside className={`
         fixed top-0 left-0 h-full w-50 bg-white/90 dark:bg-black/90 backdrop-blur-sm shadow-xl
         transform transition-transform duration-300 ease-in-out z-40
@@ -32,19 +20,22 @@ function Sidebar() {
         sm:translate-x-0
       `}>
         <div className="flex flex-col h-full p-6">
-          {/* Logo */}
           <Link to="/" className="text-3xl font-bold libre mb-8">
             {siteConfig.name}
           </Link>
 
-          {/* 导航链接 */}
           <nav className="flex-1 space-y-4">
             {navItems.map((item) => (
               <Link
                 key={item.url}
                 to={item.url}
-                className="block py-2 px-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
-                onClick={() => setIsOpen(false)}
+                className={`block py-2 px-4 rounded-[15px] hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors`
+                  + (currentUrl === item.url ? ' bg-gray-200 dark:bg-gray-700' : '')
+                }
+                onClick={() => {
+                  setCurrentUrl(item.url);
+                  setIsOpen(false)
+                }}
               >
                 <div className="flex items-center space-x-3">
                   <item.icon className="inline-block mr-2 w-4 h-4" />
@@ -60,7 +51,7 @@ function Sidebar() {
               <Button 
                 aria-label="Language" 
                 variant="secondary" 
-                size="sm" 
+                size="lg" 
                 className="w-full justify-start"
               >
                 <Globe className="mr-2" />
