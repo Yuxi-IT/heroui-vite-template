@@ -1,8 +1,7 @@
 export default {
   nav: {
     home: '首页',
-    square: '广场',
-    messages: '消息',
+    setting: '设置',
     user: '用户',
     notFound: '404'
   },

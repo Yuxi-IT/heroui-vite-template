@@ -1,8 +1,7 @@
 export default {
   nav: {
     home: 'Home',
-    square: 'Square',
-    messages: 'Messages',
+    setting: 'Setting',
     user: 'User',
     notFound: '404'
   },

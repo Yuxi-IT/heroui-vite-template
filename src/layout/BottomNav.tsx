@@ -10,7 +10,7 @@ interface BottomNavProps {
 }
 
 export function BottomNav({ defaultActive, onItemClick }: BottomNavProps) {
-  const items = navItems;
+  const items = navItems.filter(item => item.showInBottomNav !== false);
   const location = useLocation();
   const { t } = useI18n();
   const [activeId, setActiveId] = useState(
